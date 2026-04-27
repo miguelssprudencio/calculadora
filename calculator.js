@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 function Calculator() {
     this.display = document.getElementById('display');
     this.buttons = document.querySelectorAll('.button');
-  
+    
 
     this.buttons.forEach(button => {
         button.addEventListener('click', () => {
@@ -31,7 +31,7 @@ Calculator.prototype.clearDisplay = function () {
 };
 
 Calculator.prototype.appendToDisplay = function (value) {
-  
+    
     if (this.display.value === '0' && value !== '.') {
         this.display.value = value;
     } else {
